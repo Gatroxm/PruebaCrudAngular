@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1>
+                Listar usuarios
+            </h1>
+            <hr>
+        </div>
+        <div class="col-sm-6 mb-3" *ngFor="let usuario of usuarios">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{usuario.nombre}} {{usuario.apellido}}</h5>
+                    <p class="card-text mb-0">Edad: {{usuario.edad}}</p>
+                    <p class="card-text mb-0">Correo: {{usuario.email}}</p>
+                    <p class="card-text mb-3">Teléfono {{usuario.telefono}}</p>
+                    <a href="/user/edit/{{usuario.id}}" class="btn btn-warning text-white me-3">Editar</a>
+                    <a class="btn btn-danger" (click)="deleteUser(usuario.id)">Eliminar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

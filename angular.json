@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "pruebaCRUD"
+  "defaultProject": "pruebaCRUD",
+  "cli": {
+    "analytics": "b3217cd4-0868-461a-ba60-3f29087ccbbb"
+  }
 }
